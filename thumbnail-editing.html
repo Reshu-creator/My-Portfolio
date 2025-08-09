@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Editing - Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">Portfolio</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#work" class="nav-link">Work</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1 class="portfolio-title">Thumbnail Editing</h1>
+            <p class="portfolio-subtitle">Scroll-stopping thumbnails that increase click-through rates and engagement</p>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a> > <span>Thumbnail Editing</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="./Mywork/Thumbnail Editing/Freelancing Kickstart 2025.jpeg" alt="YouTube Thumbnail">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal1')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>YouTube Thumbnail</h3>
+                        <p>Freelancing Guide</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="./Mywork/Thumbnail Editing/dreams thumbnail.jpg" alt="Gaming Thumbnail">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal2')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Motivational Poster Design</h3>
+                        <p>Career Inspiration</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="./Mywork/Thumbnail Editing/Nature Adventure.jpg" alt="Vlog Thumbnail">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal3')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Travel Poster Design</h3>
+                        <p>Nature Adventure</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="./Mywork/Thumbnail Editing/Gen Tech.jpg" alt="Business Thumbnail">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal4')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Tech Review Poster Design</h3>
+                        <p>Consumer Technology / Product Marketing</p>
+                    </div>
+                </div>
+
+                <!-- <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fitness Thumbnail">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal5')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Fitness Thumbnail</h3>
+                        <p>Health & Fitness</p>
+                    </div>
+                </div> -->
+
+                <!-- <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Food Thumbnail">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal6')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Food Thumbnail</h3>
+                        <p>Cooking Content</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <img src="./Mywork/Thumbnail Editing/Freelancing Kickstart 2025.jpeg" alt="YouTube Thumbnail">
+            <div class="modal-info">
+                <h2>YouTube Thumbnail</h2>
+                <p><strong>Category:</strong> Freelancing Guide</p>
+                <p><strong>Description:</strong> Bold and modern thumbnail designed for a YouTube video titled "How to Start Freelancing in 2025". Crafted to grab attention with high-contrast colors and a thoughtful pose, the design encourages curiosity and clicks. The layout emphasizes clarity and modern aesthetics, appealing to aspiring freelanc</p>
+                <p><strong>Tools Used:</strong> Adobe Photoshop, Figma</p>
+                <p><strong>Results:</strong> 28% boost in engagement and higher watch-time retention</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <img src="./Mywork/Thumbnail Editing/dreams thumbnail.jpg" alt="Gaming Thumbnail">
+            <div class="modal-info">
+                <h2>Motivational Poster Design</h2>
+                <p><strong>Category:</strong> Career Inspiration</p>
+                <p><strong>Description:</strong> A bold, empowering poster design titled "DREAMS – Dare to Dream Big". Showcases diverse career aspirations, including a doctor, teacher, and flight attendant, to inspire young individuals to pursue their ambitions. The layout uses symmetry, strong typeface, and authentic imagery to evoke confidence and motivation.</p>
+                <p><strong>Tools Used:</strong> Adobe Photoshop, Canva</p>
+                <p><strong>Results:</strong> Widely shared across social media and educational platforms; sparked increased engagement and positive feedback from students and mentors alike</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <img src="./Mywork/Thumbnail Editing/Nature Adventure.jpg" alt="Vlog Thumbnail">
+            <div class="modal-info">
+                <h2>Travel Poster Design</h2>
+                <p><strong>Category:</strong> Nature Adventure</p>
+                <p><strong>Description:</strong> Serene and captivating poster designed to showcase the beauty of waterfalls. Titled "WATERFALL – My Dream Adventure", the visual highlights the power and calm of nature using soft motion blur, rich greens, and organic textures. Perfect for travel blogs, adventure campaigns, or nature photography portfolios.</p>
+                <p><strong>Tools Used:</strong> Adobe Photoshop, Canva</p>
+                <p><strong>Results:</strong> Increased viewer engagement on travel platforms and boosted tourism inquiries by 25%</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <img src="./Mywork/Thumbnail Editing/Gen Tech.jpg" alt="Business Thumbnail">
+            <div class="modal-info">
+                <h2>Tech Review Poster Design</h2>
+                <p><strong>Category:</strong>  Consumer Technology / Product Marketing</p>
+                <p><strong>Description:</strong> A sleek, futuristic poster titled "Next-Gen Tech – Unboxing & Review". It features cutting-edge gadgets including a smartphone, wireless earbuds, and a smartwatch, creating a high-tech and modern vibe. The design emphasizes innovation and digital lifestyle through immersive visuals, cool lighting, and a sharp layout. Bold typography and 3D-style text enhance engagement and clarity, making it ideal for tech-focused content creators and reviewers.</p>
+                <p><strong>Tools Used:</strong>  Adobe Photoshop, Figma</p>
+                <p><strong>Results:</strong>  Attracted strong interest on social media and YouTube thumbnails; helped drive higher click-through rates for tech unboxing videos; praised for its visual appeal and modern aesthetics.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fitness Thumbnail">
+            <div class="modal-info">
+                <h2>Fitness Thumbnail</h2>
+                <p><strong>Category:</strong> Health & Fitness</p>
+                <p><strong>Description:</strong> Motivational fitness thumbnail that inspires action and engagement. Features dynamic fitness imagery, bold motivational text, and energetic colors that resonate with fitness enthusiasts.</p>
+                <p><strong>Tools Used:</strong> Adobe Photoshop, Canva</p>
+                <p><strong>Results:</strong> 39% increase in click-through rate</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <img src="https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Food Thumbnail">
+            <div class="modal-info">
+                <h2>Food Thumbnail</h2>
+                <p><strong>Category:</strong> Cooking Content</p>
+                <p><strong>Description:</strong> Appetizing food thumbnail that makes viewers hungry for more. Features high-quality food photography, appetizing colors, and text that creates desire and encourages clicks.</p>
+                <p><strong>Tools Used:</strong> Adobe Photoshop, Lightroom</p>
+                <p><strong>Results:</strong> 45% increase in click-through rate</p>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Creative Portfolio.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="portfolio-page.js"></script>
+</body>
+</html>

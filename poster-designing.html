@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster Designing - Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">Portfolio</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#work" class="nav-link">Work</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1 class="portfolio-title">Poster Designing</h1>
+            <p class="portfolio-subtitle">Creative posters that capture attention and communicate messages effectively</p>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a> > <span>Poster Designing</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="marketing">
+                    <div class="portfolio-image">
+                        <img src="./Mywork/posters/Marketing poster.jpeg" alt="Digital Marketing Agency Poster">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal1')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Digital Marketing Agency</h3>
+                        <p>Marketing Poster</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="brand">
+                    <div class="portfolio-image">
+                        <img src="./Mywork/posters/Flash Fashion Offer.jpeg" alt="Brand Campaign Poster">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal2')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Flash Fashion Offer</h3>
+                        <p>Fashion Poster</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="event">
+                    <div class="portfolio-image">
+                        <img src="./Mywork/posters/Infographic Elements Overview.jpeg" alt="Conference Poster">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal3')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Infographic Design Elements Poster</h3>
+                        <p>Informational/Design Resource Poster</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="social">
+                    <div class="portfolio-image">
+                    <video width="800" controls>
+                        <source src="./Mywork/posters/swiggy poster.mp4" type="video/mp4">Your browser does not support the video tag.
+                    </video>
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal4')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Fast Food Combo Offer Poster</h3>
+                        <p>Promotional Poster</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="product">
+                    <div class="portfolio-image">
+                        <video width="800" controls>
+                           <source src="./Mywork/posters/pizza poster.mp4" type="video/mp4">Your browser does not support the video tag.
+                        </video>
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal5')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Super Delicious Pizza Offer Poster</h3>
+                        <p>Food Promotion Poster</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="event">
+                    <div class="portfolio-image">
+                    <video width="800" controls>
+                        <source src="./Mywork/posters/Biryani poster.mp4" type="video/mp4">Your browser does not support the video tag.
+                    </video>
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal6')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Special Biryani Offer Poster</h3>
+                        <p>Promotional Poster</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="marketing">
+                    <div class="portfolio-image">
+                        <img src="./Mywork/posters/Festival offer.jpeg" alt="Vinayaka Chavithi Festival Offer Poster">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal7')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Vinayaka Chavithi Festival Offer Poster</h3>
+                        <p>Festival Promotion Poster</p>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-item" data-category="marketing">
+                    <div class="portfolio-image">
+                        <img src="./Mywork/posters/women poster.jpg" alt="MG Mall Grand Opening Invitation Poster">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal8')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>MG Mall Grand Opening Invitation Poster</h3>
+                        <p>Event Invitation Poster</p>
+                    </div>
+                </div>
+
+                  <div class="portfolio-item" data-category="marketing">
+                    <div class="portfolio-image">
+                        <img src="./Mywork/posters/Branding Poster.jpg" alt="OpenAI Brand Identity Poste">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal9')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>OpenAI Brand Identity Poster</h3>
+                        <p>Event Invitation Poster</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <img src="./Mywork//posters/Marketing poster.jpeg" alt="Digital Marketing Agency Poster">
+            <div class="modal-info">
+                <h2>Digital Marketing Agency Poster</h2>
+                <p><strong>Category:</strong> Marketing Poster</p>
+                <p><strong>Description:</strong> A professional and modern poster design for a digital marketing agency. The design effectively showcases the agency's core services including social media marketing, SEO optimization, and content marketing. Features a clean layout with vibrant orange accents and professional imagery that builds trust and credibility.</p>
+                <p><strong>Design Elements:</strong></p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                    <li>Bold, modern typography for maximum impact</li>
+                    <li>Strategic use of orange and white color scheme</li>
+                    <li>Professional model to humanize the brand</li>
+                    <li>Clear service icons and descriptions</li>
+                    <li>Contact information prominently displayed</li>
+                </ul>
+                <p><strong>Tools Used:</strong> Adobe Photoshop, Illustrator</p>
+                <p><strong>Target Audience:</strong> Small to medium businesses looking for digital marketing services</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <img src="./Mywork/posters/Flash Fashion Offer.jpeg" alt="Brand Campaign Poster">
+            <div class="modal-info">
+                <h2> Flash Fashion Offer Poster</h2>
+                <p><strong>Category:</strong>Promotional Poster</p>
+                <p><strong>Description:</strong> A bold and stylish poster designed to promote a limited-time fashion sale. Featuring a clean layout with modern typography and a warm, textured background, the design emphasizes urgency and appeal with “50% OFF” in striking black font. The model adds elegance and relatability, making it ideal for grabbing shopper attention.</p>
+                <p><strong>Design Elements:</strong></p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                    <li>Large, bold typography for sale emphasis</li>
+                    <li>Split layout with model for visual balance</li>
+                    <li>Neutral and pink tones for a trendy aesthetic</li>
+                    <li>“Shop Now” CTA to prompt immediate action</li>
+                    <li>Icons for social interaction and downloads</li>
+                </ul>
+                <p><strong>Tools Used:</strong> Canva, Adobe Photoshop</p>
+                <p><strong>Target Audience:</strong> Fashion-conscious shoppers, especially young adults and online buyers looking for seasonal deals</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <img src="./Mywork/posters/Infographic Elements Overview.jpeg" alt="Conference Poster">
+            <div class="modal-info">
+                <h2>Infographic Design Elements Poster</h2>
+                <p><strong>Category:</strong>Informational/Design Resource Poster</p>
+                <p><strong>Description:</strong>A clean and visually engaging infographic poster that showcases various essential infographic design elements. This template-style layout includes icons such as pie charts, bar graphs, arrows, and world maps—perfect for visually representing data and improving communication. The use of contrasting shades of blue helps distinguish between data segments and supports easy readability.</p>
+                <p><strong>Design Elements:</strong></p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                    <li>Donut chart illustrating data distribution using labeled segments</li>
+                    <li>Vertical bar graph to show growth or comparison</li>
+                    <li>World map for global representation of data</li>
+                    <li>Directional arrows for process or flow indication</li>
+                    <li>Simple color-coded legends for visual clarity</li>
+                    <li>Bold header typography and structured layout</li>
+                </ul>
+                <p><strong>Tools Used:</strong> Adobe Illustrator, Figma</p>
+                <p><strong>Target Audience:</strong> Graphic designers, marketers, educators, and content creators who require infographic templates for presentations, reports, or digital content.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <video width="800" controls>
+                <source src="./Mywork/posters/swiggy poster.mp4" type="video/mp4">Your browser does not support the video tag.
+            </video>
+            <div class="modal-info">
+                <h2>Fast Food Combo Offer Poster</h2>
+                <p><strong>Category:</strong> Promotional Poster</p>
+                <p><strong>Description:</strong> A bold and eye-catching promotional poster advertising a fast food combo offer. The design highlights a 50% discount on a delicious burger and fries combo, priced attractively at ₹199. The vibrant red background and large yellow price tag instantly grab attention and entice customers.</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                    <li>Bright red background to draw attention</li>
+                    <li>Large bold text and price in yellow for emphasis</li>
+                    <li>50% OFF badge for urgency and appeal</li>
+                    <li>Clear visuals of burger and fries to showcase the offer</li>
+                    <li>Availability icons for Swiggy and Zomato at the bottom</li>
+                </ul>
+                <p><strong>Tools Used:</strong> Adobe Photoshop, Illustrator</p>
+                <p><strong>Target Audience:</strong> Food lovers, especially young adults and working professionals ordering online through Swiggy or Zomato.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <video width="700" controls>
+                <source src="./Mywork/posters/pizza poster.mp4" type="video/mp4">Your browser does not support the video tag.
+            </video>
+            <div class="modal-info">
+                <h2>Super Delicious Pizza Offer Poster</h2>
+                <p><strong>Category:</strong>Food Promotion Poster</p>
+                <p><strong>Description:</strong> A vibrant and flavorful poster promoting a special offer on delicious pizzas. With a fresh green background, bold pizza visuals, and appetizing toppings flying around, the design instantly grabs attention. The 50% OFF tag and free delivery message add strong promotional appeal, making it perfect for attracting pizza lovers.</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                    <li>Fresh green background for a healthy and energetic vibe</li>
+                    <li>Mouth-watering pizza image as the central visual and 50% OFF badge for promotional impact</li>
+                    <li>Free delivery highlighted to boost convenience appeal</li>
+                    <li>Decorative ingredients (onions, tomato, herbs) enhancing food appeal</li>
+                    <li>Social media icons for Instagram and Facebook to boost engagement</li>
+                </ul>
+                <p><strong>Tools Used:</strong>  Adobe Photoshop, Canva</p>
+                <p><strong>Target Audience:</strong> Pizza lovers, especially teens, college students, and young adults looking for tasty deals and online delivery options.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <video width="800" controls>
+                <source src="./Mywork/posters/Biryani poster.mp4" type="video/mp4">Your browser does not support the video tag.
+            </video>
+            <div class="modal-info">
+                <h1>Special Biryani Offer Poster</h1>
+                <p><strong>Category:</strong> Food Promotion Poster</p>
+                <p><strong>Description:</strong> A rich and flavorful poster promoting a special biryani dish. The warm brown and gold tones complement the aromatic image of the biryani bowl, appealing to food lovers instantly. The clear "Order Now!" button along with a contact number encourages quick action and grabs attention.</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                    <li>Warm brown background that complements the dish’s color</li>
+                    <li>High-quality biryani image as the centerpiece</li>
+                    <li>Bold and stylish “Special Biryani” heading</li>
+                    <li>Eye-catching “Order Now!” call-to-action button</li>
+                    <li>Contact number clearly displayed for easy ordering</li>
+                    <li>Decorative zigzag lines to enhance visual interest</li>
+                </ul>
+                <p><strong>Tools Used:</strong>  Canva, Adobe Illustrator</p>
+                <p><strong>Target Audience:</strong> Biryani enthusiasts, foodies, and takeaway customers craving flavorful Indian cuisine.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+            <img src="./Mywork/posters/Festival offer.jpeg" alt="Conference Poster">
+            <div class="modal-info">
+                <h2>Vinayaka Chavithi Festival Offer Poster</h2>
+                <p><strong>Category:</strong> Festival Promotion Poster</p>
+                <p><strong>Description:</strong> A cheerful and festive poster celebrating Vinayaka Chavithi with an exclusive 50% discount. Featuring an adorable cartoon of Lord Ganesha on a bright yellow background, the design captures attention and spreads festive vibes. The limited-time offer and bold call-to-action encourage quick purchases.</p>
+                <p><strong>Design Elements:</strong></p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                    <li>Cute cartoon illustration of Lord Ganesha for festive appeal</li>
+                    <li>Bright yellow background symbolizing joy and celebration</li>
+                    <li>Bold black text highlighting the discount and urgency</li>
+                    <li>“Limited Time Offer” and “Shop Now” CTAs to prompt action</li>
+                    <li>Simple, clean layout for easy readability</li>
+                </ul>
+                <p><strong>Tools Used:</strong> Canva, Adobe Illustrator</p>
+                <p><strong>Target Audience:</strong> Festival shoppers, online buyers, and devotees preparing for Vinayaka Chavithi celebrations.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal8')">&times;</span>
+            <img src="./Mywork/posters/women poster.jpg" alt="Conference Poster">
+            <div class="modal-info">
+                <h2>MG Mall Grand Opening Invitation Poster</h2>
+                <p><strong>Category:</strong> Event Invitation Poster</p>
+                <p><strong>Description:</strong> A soft and elegant invitation poster for the grand opening of MG Mall. The design uses a pastel pink floral theme, festive icons, and graceful typography to create a warm and welcoming feel. It invites guests to explore a new collection and join the celebration in Vizag.</p>
+                <p><strong>Design Elements:</strong></p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                    <li>Soft pink floral background creating a festive and feminine vibe</li>
+                    <li>Decorative icons like gift boxes, shopping bags, and textiles</li>
+                    <li>Lord Ganesha motif to symbolize auspicious beginnings</li>
+                    <li>Elegant script fonts for a personal and classy tone</li>
+                    <li>Clearly mentioned venue and date for ease of attendance</li>
+                </ul>
+                <p><strong>Tools Used:</strong> Canva, Adobe Illustrator</p>
+                <p><strong>Target Audience:</strong> Local shoppers, fashion enthusiasts, and families interested in new shopping destinations and festive</p>
+            </div>
+        </div>
+    </div>
+
+      <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal9')">&times;</span>
+            <img src="./Mywork/posters/Branding Poster.jpg" alt="Conference Poster">
+            <div class="modal-info">
+                <h1>OpenAI Brand Identity Poster</h1>
+                <p><strong>Category:</strong> Corporate Branding Poster</p>
+                <p><strong>Description:</strong> A sleek and professional poster showcasing OpenAI’s brand identity, including logo, font, colors, and usage examples. It reflects a modern, innovative, and approachable image with consistent visual elements.</p>
+                <p><strong>Design Elements:</strong></p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                    <li>Prominent OpenAI logo with tagline “Shaping the Future”</li>
+                    <li>Font: Montserrat used for clear and modern branding</li>
+                    <li>Color Palette: <br>
+                        
+                        Primary: Deep blue (trust, innovation)<br>
+
+                        Secondary: White (clarity, simplicity)<br>
+
+                        Accent: Golden yellow (energy, emphasis)</li>
+                    <li>Visuals of brand usage on devices and business cards</li>
+                    <li>Descriptive brand traits: Innovative, Sophisticated, Cutting-edge, Approachable</li>
+                </ul>
+                <p><strong>Tools Used:</strong>Adobe Illustrator, Figma</p>
+                <p><strong>Target Audience:</strong> Design teams, branding professionals, and corporate stakeholders looking to understand or replicate OpenAI’s brand standards.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Creative Portfolio.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="portfolio-page.js"></script>
+</body>
+</html>

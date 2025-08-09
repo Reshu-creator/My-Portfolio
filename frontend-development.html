@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Development - Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">Portfolio</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#work" class="nav-link">Work</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1 class="portfolio-title">Frontend Development</h1>
+            <p class="portfolio-subtitle">Responsive websites built with HTML, CSS, and JavaScript for optimal user experience</p>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a> > <span>Frontend Development</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/326502/pexels-photo-326502.jpeg?auto=compress&cs=tinysrgb&w=800" alt="E-commerce Website">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal1')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-commerce Website</h3>
+                        <p>Online Store</p>
+                        <span class="year">2024</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Corporate Website">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal2')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Corporate Website</h3>
+                        <p>Business Site</p>
+                        <span class="year">2024</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Portfolio Website">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal3')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Creative Portfolio</p>
+                        <span class="year">2024</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Landing Page">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal4')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Landing Page</h3>
+                        <p>Marketing Page</p>
+                        <span class="year">2024</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Restaurant Website">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal5')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Restaurant Website</h3>
+                        <p>Food & Dining</p>
+                        <span class="year">2024</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fitness App">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal6')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Fitness App</h3>
+                        <p>Web Application</p>
+                        <span class="year">2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <img src="https://images.pexels.com/photos/326502/pexels-photo-326502.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="E-commerce Website">
+            <div class="modal-info">
+                <h2>E-commerce Website</h2>
+                <p><strong>Category:</strong> Online Store</p>
+                <p><strong>Year:</strong> 2024</p>
+                <p><strong>Description:</strong> A fully responsive e-commerce website with modern design and smooth user experience. Features include product catalog, shopping cart, checkout process, and payment integration.</p>
+                <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Responsive Design</p>
+                <p><strong>Features:</strong> Product filtering, Shopping cart, User authentication, Payment processing</p>
+                <p><strong>Results:</strong> 40% increase in conversion rate</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Corporate Website">
+            <div class="modal-info">
+                <h2>Corporate Website</h2>
+                <p><strong>Category:</strong> Business Site</p>
+                <p><strong>Year:</strong> 2024</p>
+                <p><strong>Description:</strong> Professional corporate website with clean design and intuitive navigation. Built to establish credibility and showcase company services effectively.</p>
+                <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Bootstrap</p>
+                <p><strong>Features:</strong> Contact forms, Service pages, About section, Blog integration</p>
+                <p><strong>Results:</strong> 60% increase in lead generation</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Portfolio Website">
+            <div class="modal-info">
+                <h2>Portfolio Website</h2>
+                <p><strong>Category:</strong> Creative Portfolio</p>
+                <p><strong>Year:</strong> 2024</p>
+                <p><strong>Description:</strong> Creative portfolio website showcasing artistic work with beautiful animations and smooth transitions. Optimized for showcasing visual content and creative projects.</p>
+                <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, CSS Animations</p>
+                <p><strong>Features:</strong> Image galleries, Smooth scrolling, Responsive design, Contact forms</p>
+                <p><strong>Results:</strong> Increased client inquiries by 50%</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Landing Page">
+            <div class="modal-info">
+                <h2>Landing Page</h2>
+                <p><strong>Category:</strong> Marketing Page</p>
+                <p><strong>Year:</strong> 2024</p>
+                <p><strong>Description:</strong> High-converting landing page designed to capture leads and drive conversions. Features compelling copy, clear call-to-actions, and optimized conversion flow.</p>
+                <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, A/B Testing</p>
+                <p><strong>Features:</strong> Lead capture forms, Video integration, Social proof, Mobile optimization</p>
+                <p><strong>Results:</strong> 35% conversion rate improvement</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <img src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Restaurant Website">
+            <div class="modal-info">
+                <h2>Restaurant Website</h2>
+                <p><strong>Category:</strong> Food & Dining</p>
+                <p><strong>Year:</strong> 2024</p>
+                <p><strong>Description:</strong> Appetizing restaurant website with online menu, reservation system, and location information. Designed to showcase food photography and drive table bookings.</p>
+                <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Google Maps API</p>
+                <p><strong>Features:</strong> Online menu, Reservation system, Location map, Gallery</p>
+                <p><strong>Results:</strong> 25% increase in online reservations</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fitness App">
+            <div class="modal-info">
+                <h2>Fitness App</h2>
+                <p><strong>Category:</strong> Web Application</p>
+                <p><strong>Year:</strong> 2024</p>
+                <p><strong>Description:</strong> Interactive fitness web application with workout tracking, progress monitoring, and social features. Built with modern web technologies for optimal performance.</p>
+                <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Local Storage, Progressive Web App</p>
+                <p><strong>Features:</strong> Workout tracking, Progress charts, Social sharing, Offline support</p>
+                <p><strong>Results:</strong> 10,000+ active users within 3 months</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Creative Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="portfolio-page.js"></script>
+</body>
+</html>

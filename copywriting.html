@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copywriting - Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">Portfolio</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#work" class="nav-link">Work</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1 class="portfolio-title">Copywriting</h1>
+            <p class="portfolio-subtitle">Compelling copy that engages your audience and drives action with powerful words</p>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a> > <span>Copywriting</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Website Copy">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal1')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Website Copy</h3>
+                        <p>Web Content</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Email Campaign">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal2')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Email Campaign</h3>
+                        <p>Email Marketing</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Social Media Copy">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal3')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Social Media Copy</h3>
+                        <p>Social Media</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Product Description">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal4')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Product Descriptions</h3>
+                        <p>E-commerce</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Blog Content">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal5')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Blog Content</h3>
+                        <p>Content Marketing</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ad Copy">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal6')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Ad Copy</h3>
+                        <p>Advertising</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Website Copy">
+            <div class="modal-info">
+                <h2>Website Copy</h2>
+                <p><strong>Category:</strong> Web Content</p>
+                <p><strong>Description:</strong> Compelling website copy that converts visitors into customers. Clear, concise, and persuasive content that guides users through the customer journey.</p>
+                <div class="copy-sample">
+                    <h4>Sample Copy:</h4>
+                    <blockquote>
+                        "Transform your digital presence with designs that don't just look good—they perform. Our data-driven approach ensures every element serves a purpose, creating experiences that convert visitors into loyal customers."
+                    </blockquote>
+                </div>
+                <p><strong>Tools Used:</strong> Research, SEO Optimization</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Email Campaign">
+            <div class="modal-info">
+                <h2>Email Campaign</h2>
+                <p><strong>Category:</strong> Email Marketing</p>
+                <p><strong>Description:</strong> High-converting email campaigns that build relationships and drive sales. Personalized content that speaks directly to your audience's needs and interests.</p>
+                <div class="copy-sample">
+                    <h4>Sample Subject Line:</h4>
+                    <blockquote>
+                        "Your Design Dreams Are Just One Click Away 🎨"
+                    </blockquote>
+                </div>
+                <p><strong>Tools Used:</strong> Email Marketing Platforms, Analytics</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <img src="https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Social Media Copy">
+            <div class="modal-info">
+                <h2>Social Media Copy</h2>
+                <p><strong>Category:</strong> Social Media</p>
+                <p><strong>Description:</strong> Engaging social media content that builds community and drives engagement. Platform-specific copy that maximizes reach and interaction.</p>
+                <div class="copy-sample">
+                    <h4>Sample Post:</h4>
+                    <blockquote>
+                        "Good design is invisible until it's not. ✨ When your brand identity clicks, everything else falls into place. What story is your design telling? #BrandDesign #CreativeLife"
+                    </blockquote>
+                </div>
+                <p><strong>Tools Used:</strong> Social Media Management Tools, Hashtag Research, Trend Analysis</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <img src="https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Product Description">
+            <div class="modal-info">
+                <h2>Product Descriptions</h2>
+                <p><strong>Category:</strong> E-commerce</p>
+                <p><strong>Description:</strong> Persuasive product descriptions that highlight benefits and overcome objections. SEO-optimized content that ranks well and converts browsers into buyers.</p>
+                <div class="copy-sample">
+                    <h4>Sample Description:</h4>
+                    <blockquote>
+                        "Crafted for the modern creative, this premium design toolkit includes everything you need to elevate your brand. From stunning templates to professional fonts, create with confidence knowing every element has been carefully curated for maximum impact."
+                    </blockquote>
+                </div>
+                <p><strong>Tools Used:</strong> Keyword Research, Competitor Analysis, Conversion Optimization</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Blog Content">
+            <div class="modal-info">
+                <h2>Blog Content</h2>
+                <p><strong>Category:</strong> Content Marketing</p>
+                <p><strong>Description:</strong> Informative and engaging blog content that establishes thought leadership and drives organic traffic. Well-researched articles that provide real value to readers.</p>
+                <div class="copy-sample">
+                    <h4>Sample Blog Title:</h4>
+                    <blockquote>
+                        "The Psychology of Color in Brand Design: How to Choose Colors That Convert"
+                    </blockquote>
+                </div>
+                <p><strong>Tools Used:</strong> Content Planning, Analytics, Research</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Ad Copy">
+            <div class="modal-info">
+                <h2>Ad Copy</h2>
+                <p><strong>Category:</strong> Advertising</p>
+                <p><strong>Description:</strong> High-converting ad copy that captures attention and drives action. Tested and optimized for maximum ROI across various advertising platforms.</p>
+                <div class="copy-sample">
+                    <h4>Sample Ad Copy:</h4>
+                    <blockquote>
+                        "Stop blending in. Start standing out. Custom design solutions that make your brand impossible to ignore. Book your free consultation today and discover what makes great brands unforgettable."
+                    </blockquote>
+                </div>
+                <p><strong>Tools Used:</strong> Ad Platforms, Analytics, Conversion Tracking</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Creative Portfolio.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="portfolio-page.js"></script>
+</body>
+</html>

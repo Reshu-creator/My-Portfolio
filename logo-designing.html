@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Designing - Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">Portfolio</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#work" class="nav-link">Work</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1 class="portfolio-title">Logo Designing</h1>
+            <p class="portfolio-subtitle">Memorable brand identities that represent your values and make lasting impressions</p>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a> > <span>Logo Designing</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="./Mywork/Logos/Grow green.jpeg" alt="Tech Startup Logo">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal1')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Grow Green Logo</h3>
+                        <p>Environmental & Sustainability</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="./Mywork/Logos/NVR logo.jpeg" alt="Coffee Shop Logo">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal2')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>NVR Company Logo</h3>
+                        <p>Corporate & Business</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="./Mywork/Logos/Fitness Logo.png" alt="Fitness Brand Logo">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal3')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Fitness Brand Logo</h3>
+                        <p>Health & Wellness</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="./Mywork/Logos/online shop logo.jpg" alt="Fashion Brand Logo">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal4')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Online Shop Logo</h3>
+                        <p>E-commerce & Retail</p>
+                    </div>
+                </div>
+
+                <!-- <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Real Estate Logo">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal5')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Real Estate Logo</h3>
+                        <p>Real Estate</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Restaurant Logo">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('modal6')">View Full Size</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Restaurant Logo</h3>
+                        <p>Food & Dining</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <img src="./Mywork/Logos/Grow green.jpeg" alt="Tech Startup Logo">
+            <div class="modal-info">
+                <h2>Grow Green Logo</h2>
+                <p><strong>Category:</strong>  Environmental & Sustainability</p>
+                <p><strong>Description:</strong> A serene and artistic logo design representing eco-consciousness and natural beauty. The illustration of a woman with flowers and foliage integrated into her hair symbolizes harmony with nature, growth, and the nurturing spirit of the environment. The elegant typography adds a soft and organic touch to the overall design.</p>
+                <p><strong>Tools Used:</strong> Adobe Illustrator, Canva</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <img src="./Mywork/Logos/NVR logo.jpeg" alt="Coffee Shop Logo">
+            <div class="modal-info">
+                <h2>NVR Company Logo</h2>
+                <p><strong>Category:</strong> Corporate & Business</p>
+                <p><strong>Description:</strong> A professional and sleek logo designed for a corporate brand. The logo uses a dynamic combination of blue and orange to convey trust, innovation, and energy. The stylized “C” element represents growth, motion, and forward-thinking, while the bold typography ensures brand recognition and authority.</p>
+                <p><strong>Tools Used:</strong> Adobe Illustrator, Canva</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <img src="./Mywork//Logos/Fitness Logo.png" alt="Fitness Brand Logo">
+            <div class="modal-info">
+                <h2>Fitness Brand Logo</h2>
+                <p><strong>Category:</strong> Health & Wellness</p>
+                <p><strong>Description:</strong> Dynamic and energetic logo design for a fitness brand. The design conveys strength, movement, and motivation through bold shapes and vibrant colors.</p>
+                <p><strong>Tools Used:</strong> Adobe Illustrator, Photoshop</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <img src="./Mywork/Logos/online shop logo.jpg" alt="Fashion Brand Logo">
+            <div class="modal-info">
+                <h2>Online Shop Logo</h2>
+                <p><strong>Category:</strong> E-commerce & Retail</p>
+                <p><strong>Description:</strong> Fun and approachable logo created for an online shopping platform. Featuring a cheerful shopping bag mascot and vibrant gradient background, the design builds instant brand recall and customer friendliness. Perfect for digital storefronts, mobile apps, and promotional materials.</p>
+                <p><strong>Tools Used:</strong> Adobe Illustrator, Photoshop</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Real Estate Logo">
+            <div class="modal-info">
+                <h2>Real Estate Logo</h2>
+                <p><strong>Category:</strong> Real Estate</p>
+                <p><strong>Description:</strong> Professional and trustworthy logo design for a real estate company. The design instills confidence and reliability through solid design principles.</p>
+                <p><strong>Tools Used:</strong> Adobe Illustrator</p>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <img src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Restaurant Logo">
+            <div class="modal-info">
+                <h2>Restaurant Logo</h2>
+                <p><strong>Category:</strong> Food & Dining</p>
+                <p><strong>Description:</strong> Appetizing and memorable logo design for a restaurant. The design captures the culinary experience and creates appetite appeal through thoughtful design choices.</p>
+                <p><strong>Tools Used:</strong> Adobe Illustrator, Photoshop</p>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Creative Portfolio</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="portfolio-page.js"></script>
+</body>
+</html>
